@@ -1,0 +1,14 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Exeter Genetics and Biotechnology Club Logo Placeholder</title>
+  <desc id="desc">Red square background with stylized yellow and blue DNA helix.</desc>
+  <rect width="256" height="256" rx="24" fill="#D7263D"/>
+  <path d="M68 40C108 80 148 176 188 216" stroke="#F4C542" stroke-width="16" stroke-linecap="round"/>
+  <path d="M188 40C148 80 108 176 68 216" stroke="#8ECAE6" stroke-width="16" stroke-linecap="round"/>
+  <g stroke="white" stroke-width="8" stroke-linecap="round" opacity="0.9">
+    <path d="M85 64H171"/>
+    <path d="M79 96H177"/>
+    <path d="M73 128H183"/>
+    <path d="M79 160H177"/>
+    <path d="M85 192H171"/>
+  </g>
+</svg>
