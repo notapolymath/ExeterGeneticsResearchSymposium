@@ -3,231 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exeter Genetics & Biotechnology Club Symposium 2027</title>
-    <meta
-      name="description"
-      content="Official site for the Spring 2027 Exeter Genetics and Biotechnology Club Research Symposium at Phillips Exeter Academy."
-    />
+    <title>Home | Exeter Genetics Symposium 2027</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@600;700&family=Lora:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@600;700;800&family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="#top">
-          <img src="assets/club-logo.svg" alt="Exeter Genetics and Biotechnology Club logo" />
-          <span>Exeter Genetics & Biotechnology Club</span>
-        </a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <a class="brand" href="index.html"><img src="assets/club-logo.svg" alt="Exeter Genetics Club logo" /><span>Exeter Genetics & Biotechnology Club</span></a>
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#submission">Competition</a>
-          <a href="#educators">Educator Hub</a>
-          <a href="#resources">Resources</a>
-          <a href="#schedule">Schedule</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html">Home</a><a href="about.html">About</a><a href="competition.html">Competition</a><a href="educators.html">Educator Hub</a><a href="resources.html">Resources</a><a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
         </nav>
+        <form class="site-search" aria-label="Site search">
+          <label for="site-search-input" class="note">Search</label>
+          <input id="site-search-input" list="site-pages" placeholder="Go to a page" />
+          <datalist id="site-pages"><option value="Home"></option><option value="About"></option><option value="Competition"></option><option value="Educators"></option><option value="Resources"></option><option value="Schedule"></option><option value="Contact"></option></datalist>
+          <button type="submit">Go</button>
+        </form>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       </div>
     </header>
-
     <main>
-      <section id="home" class="hero">
-        <div class="dna-bg" aria-hidden="true"></div>
+      <section class="page-hero">
         <div class="container hero-grid">
-          <div>
+          <article class="glass">
             <p class="eyebrow">Spring 2027 • Phillips Exeter Academy</p>
             <h1>The Spring 2027 Exeter Genetics and Biotechnology Club Research Symposium</h1>
-            <p class="lead">Grainger and Forum, Phillips Exeter Academy • Exact Date TBD</p>
-            <p>
-              A national launch pad for high school researchers. Whether you are brand new to research or already curious
-              about computational biology, this symposium helps students build real dry-lab skills in R, Python,
-              data analysis, and public biological databases.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#submission">Register Now</a>
-              <span class="open-tag">Registration is open to students from external schools nationwide.</span>
-            </div>
-          </div>
-          <aside class="hero-card">
-            <h2>Mission</h2>
-            <p>
-              We connect motivated high school students with practical research workflows, poster communication,
-              and mentorship by faculty and industry professionals so students can confidently step into modern biology.
-            </p>
+            <p class="subtitle">Grainger and Forum, Phillips Exeter Academy • Exact date TBD. Registration is open to high school students from schools nationwide.</p>
+            <p>This symposium is designed as an academic launch pad for students entering biological research for the first time. Participants build confidence in dry-lab research, data literacy, and computational workflows while learning how to communicate findings to technical and non-technical audiences.</p>
+            <p>Students will gain guided exposure to R and Python analysis pipelines, public biological databases, reproducible notebook practices, and evidence-driven interpretation. The program emphasizes research habits used in university and industry environments.</p>
+            <p><a class="btn btn-primary" href="competition.html">Register Now</a></p>
+          </article>
+          <aside class="glass">
+            <h2>Why This Symposium Matters</h2>
+            <ul class="list-clean">
+              <li>Build scientific reasoning without prior research experience.</li>
+              <li>Translate raw data into a coherent biological narrative.</li>
+              <li>Develop communication skills through poster presentation.</li>
+              <li>Connect with educators, mentors, and peer researchers.</li>
+            </ul>
           </aside>
         </div>
       </section>
 
-      <section id="about" class="section">
-        <div class="container">
-          <h2>About Us</h2>
-          <div class="cards four">
-            <article class="card">
-              <h3>Adrian Chan</h3>
-              <p>Student Co-Head</p>
-            </article>
-            <article class="card">
-              <h3>Luke Wang</h3>
-              <p>Student Co-Head</p>
-            </article>
-            <article class="card">
-              <h3>Reya Satam</h3>
-              <p>Student Co-Head</p>
-            </article>
-            <article class="card">
-              <h3>Jaiden Kim</h3>
-              <p>Student Co-Head • Primary Contact</p>
-            </article>
-          </div>
-          <article class="advisor">
-            <h3>Faculty Advisor: Dr. Summer Morrill</h3>
-            <p>
-              Dr. Morrill teaches BIO586: Molecular Genetics and brings deep research expertise from her time at MIT's Koch
-              Institute, supporting rigorous student-led inquiry.
-            </p>
-          </article>
-
-          <h3>Participant Timeline</h3>
-          <div class="timeline">
-            <article>
-              <h4>Fall 2026</h4>
-              <p>Learn the meta-field of biological research and core dry-lab tools: R, Python, and public datasets.</p>
-            </article>
-            <article>
-              <h4>Winter 2026</h4>
-              <p>Pursue independent projects, refine analysis, and finalize registration before submissions close.</p>
-            </article>
-            <article>
-              <h4>Spring 2027</h4>
-              <p>Organize findings, design posters, present research, and participate in judging and awards.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="submission" class="section alt">
-        <div class="container">
-          <h2>Competition & Submission Portal</h2>
-          <div class="grid-two">
-            <article>
-              <h3>Competitor Guidelines</h3>
-              <ul>
-                <li><strong>Abstract:</strong> 100–300 words.</li>
-                <li>Include introduction, purpose, method, results, and conclusion.</li>
-                <li><strong>Poster Dimensions:</strong> 44&quot; wide × 33&quot; high (landscape).</li>
-                <li><strong>Minimum font size:</strong> 24 pt for readability.</li>
-              </ul>
-              <a class="btn btn-outline" href="downloads/abstract-template.md" download>Download Abstract Template</a>
-              <a class="btn btn-outline" href="downloads/poster-layout-template.md" download>Download Poster Layout Template</a>
-            </article>
-            <article>
-              <h3>Judging & Awards</h3>
-              <p>Projects are evaluated on scientific thought, visual presentation, and communication clarity.</p>
-              <ol>
-                <li>Judge 1</li>
-                <li>Judge 2</li>
-                <li>Judge 3</li>
-                <li>Judge 4</li>
-              </ol>
-              <p>Top projects will receive research grants to support future scientific work.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="educators" class="section">
-        <div class="container">
-          <h2>Educator & Administrator Hub</h2>
-          <p>
-            This symposium gives schools a high-impact, project-based research platform. Students develop data
-            management, time management, experimental design, and collaborative communication skills while presenting work
-            in a formal academic setting.
-          </p>
-          <p>
-            Educators are encouraged to share symposium opportunities with research clubs, science classes, and STEM programs.
-          </p>
-          <a class="btn btn-primary" href="downloads/educator-flyer.txt" download>Download Shareable Flyer</a>
-        </div>
-      </section>
-
-      <section id="resources" class="section alt">
-        <div class="container">
-          <h2>Resources & Helpful Material</h2>
-          <div class="resource-list">
-            <a href="https://www.pythonforbiologists.org/" target="_blank" rel="noreferrer">Beginner Python for Biologists</a>
-            <a href="https://bioinformatics.ccr.cancer.gov/docs/rintro/Lesson_1/" target="_blank" rel="noreferrer">Beginner R Programming Lesson</a>
-            <a href="https://www.ncbi.nlm.nih.gov/geo/info/faq.html" target="_blank" rel="noreferrer">NCBI GEO FAQ and Navigation</a>
-            <a href="https://www.sjsu.edu/writingcenter/docs/handouts/Abstracts.pdf" target="_blank" rel="noreferrer">How to Write Research Abstracts (PDF)</a>
-            <a href="https://www.davidsongifted.org/gifted-blog/creating-and-presenting-research-posters/" target="_blank" rel="noreferrer">Guide to Creating and Presenting Posters</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="schedule" class="section">
-        <div class="container">
-          <h2>Symposium Schedule</h2>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th>Activity</th>
-                  <th>Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td>8:00 AM – 9:00 AM</td><td>Registration</td><td>Phelps Lobby</td></tr>
-                <tr><td>9:00 AM – 9:30 AM</td><td>Opening Ceremony &amp; Keynote Speaker</td><td>Forum</td></tr>
-                <tr><td>9:30 AM – 11:30 AM</td><td>Morning Poster Session</td><td>Grainger</td></tr>
-                <tr><td>11:30 AM – 12:30 PM</td><td>Lunch</td><td>New Dining Hall</td></tr>
-                <tr><td>12:30 PM – 2:00 PM</td><td>Afternoon Poster Session</td><td>Grainger</td></tr>
-                <tr><td>2:00 PM – 2:30 PM</td><td>Cleanup &amp; Judging Deliberation</td><td>Grainger</td></tr>
-                <tr><td>2:30 PM – 3:00 PM</td><td>Closing Ceremony &amp; Awards</td><td>Forum</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section alt">
-        <div class="container">
-          <h2>Contact & Connect</h2>
-          <p>
-            Primary contact: <a href="mailto:jtkim1@exeter.edu">Jaiden Kim (jtkim1@exeter.edu)</a>
-          </p>
-          <p>
-            Follow the club on Instagram:
-            <a href="https://www.instagram.com/exetergeneticsclub/" target="_blank" rel="noreferrer">@exetergeneticsclub</a>
-          </p>
-
-          <form class="contact-form" action="#" method="post">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button class="btn btn-primary" type="submit">Send Message</button>
-          </form>
+      <section class="section">
+        <div class="container grid-three">
+          <article class="glass"><h3>Skill Foundation</h3><p>Students begin with fundamentals in coding, data structures, statistical reasoning, and scientific literature review.</p></article>
+          <article class="glass"><h3>Independent Inquiry</h3><p>Each team pursues a focused question, identifies datasets, and documents methods and results transparently.</p></article>
+          <article class="glass"><h3>Academic Presentation</h3><p>Participants synthesize findings into professional posters and defend their conclusions during formal judging.</p></article>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 Exeter Genetics and Biotechnology Club • Phillips Exeter Academy</p>
-      </div>
-    </footer>
-
+    <footer class="site-footer"><div class="container">© 2026 Exeter Genetics and Biotechnology Club • Phillips Exeter Academy</div></footer>
     <script src="script.js"></script>
   </body>
 </html>
