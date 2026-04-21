@@ -12,44 +12,50 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="index.html"><img src="assets/club-logo.svg" alt="Club logo" /><span>Exeter Genetics & Biotechnology Club</span></a>
-        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <a class="brand" href="index.html"><img src="assets/club-logo.svg" alt="Exeter Genetics Club logo" /><span>Exeter Genetics & Biotechnology Club</span></a>
         <nav id="site-nav" class="site-nav" aria-label="Main navigation">
           <a href="index.html">Home</a><a href="about.html">About</a><a href="competition.html">Competition</a><a href="educators.html">Educator Hub</a><a href="resources.html">Resources</a><a href="schedule.html">Schedule</a><a href="contact.html">Contact</a>
         </nav>
+        <form class="site-search" aria-label="Site search">
+          <label for="site-search-input" class="note">Search</label>
+          <input id="site-search-input" list="site-pages" placeholder="Go to a page" />
+          <datalist id="site-pages"><option value="Home"></option><option value="About"></option><option value="Competition"></option><option value="Educators"></option><option value="Resources"></option><option value="Schedule"></option><option value="Contact"></option></datalist>
+          <button type="submit">Go</button>
+        </form>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       </div>
     </header>
-
     <main>
       <section class="page-hero">
         <div class="container hero-grid">
           <article class="glass">
             <p class="eyebrow">Spring 2027 • Phillips Exeter Academy</p>
             <h1>The Spring 2027 Exeter Genetics and Biotechnology Club Research Symposium</h1>
-            <p class="subtitle">Grainger and Forum, Phillips Exeter Academy • Spring 2027 — Exact Date TBD.</p>
-            <p>A launch pad for students entering biological research without prior experience. We focus on dry-lab mastery in R, Python, public databases, and scientific communication with support from faculty and industry professionals.</p>
-            <p>
-              <a class="btn btn-primary" href="competition.html">Register Now</a>
-              <span class="note">Registration is open to students from external schools nationwide.</span>
-            </p>
+            <p class="subtitle">Grainger and Forum, Phillips Exeter Academy • Exact date TBD. Registration is open to high school students from schools nationwide.</p>
+            <p>This symposium is designed as an academic launch pad for students entering biological research for the first time. Participants build confidence in dry-lab research, data literacy, and computational workflows while learning how to communicate findings to technical and non-technical audiences.</p>
+            <p>Students will gain guided exposure to R and Python analysis pipelines, public biological databases, reproducible notebook practices, and evidence-driven interpretation. The program emphasizes research habits used in university and industry environments.</p>
+            <p><a class="btn btn-primary" href="competition.html">Register Now</a></p>
           </article>
           <aside class="glass">
-            <h2>Symposium Mission</h2>
-            <p>Build confidence and capability in high school research through guided inquiry, reproducible analysis, and professional poster presentation.</p>
-            <p><a class="btn btn-secondary" href="resources.html">Explore Learning Resources</a></p>
+            <h2>Why This Symposium Matters</h2>
+            <ul class="list-clean">
+              <li>Build scientific reasoning without prior research experience.</li>
+              <li>Translate raw data into a coherent biological narrative.</li>
+              <li>Develop communication skills through poster presentation.</li>
+              <li>Connect with educators, mentors, and peer researchers.</li>
+            </ul>
           </aside>
         </div>
       </section>
 
       <section class="section">
         <div class="container grid-three">
-          <article class="glass"><h3>Learn</h3><p>Master dry-lab tools and the meta-field of biological research in Fall 2026.</p></article>
-          <article class="glass"><h3>Investigate</h3><p>Pursue independent projects and finalize submissions in Winter 2026.</p></article>
-          <article class="glass"><h3>Present</h3><p>Share findings, posters, and conclusions in Spring 2027.</p></article>
+          <article class="glass"><h3>Skill Foundation</h3><p>Students begin with fundamentals in coding, data structures, statistical reasoning, and scientific literature review.</p></article>
+          <article class="glass"><h3>Independent Inquiry</h3><p>Each team pursues a focused question, identifies datasets, and documents methods and results transparently.</p></article>
+          <article class="glass"><h3>Academic Presentation</h3><p>Participants synthesize findings into professional posters and defend their conclusions during formal judging.</p></article>
         </div>
       </section>
     </main>
-
     <footer class="site-footer"><div class="container">© 2026 Exeter Genetics and Biotechnology Club • Phillips Exeter Academy</div></footer>
     <script src="script.js"></script>
   </body>
